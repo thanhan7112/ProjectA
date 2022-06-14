@@ -1,12 +1,14 @@
 import "./Main.css";
 import { BiHomeAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
-
+import Logo from "../Image/axie.png"
 function Menu() {
   return (
     <div>
       <div className="MenuMain">
-        <div className="Logo"></div>
+        <div className="Logo">
+            <img className="LogoImage" src={Logo}></img>
+        </div>
         <div className="MenuHome">
           <div className="icon">
             <BiHomeAlt

@@ -1,12 +1,14 @@
 import "./Main.css";
 import { FaEthereum } from "react-icons/fa";
 import { Card } from "react-bootstrap";
+import img from '../Image/origin-banner.png'
 import Menu from "./Menu";
-function Main() {
+function Home() {
   return (
     <div className="main">
       <Menu></Menu>
-      <div className="HomePoster">
+      <div className="HomePoster"> 
+      <img className="image" src={img}></img>
         <h2>Axie Infinity: Origin is live in Early Access!</h2>
         <h4>
           The day is here! Axie Infinity: Origin is now available to play via
@@ -17,6 +19,7 @@ function Main() {
             Download on Mavis Hub
           </a>
         </div>
+        
       </div>
       <div className="HomeMainSecond">
         <div className="Header-HomeMainSecond">
@@ -24,6 +27,9 @@ function Main() {
         </div>
         <div className="Detail-HomeMainSecond">
           <h3>Total Item</h3>
+        </div>
+        <div className="Detail-Volume-HomeMainSecond">
+          <h3>Total Volume</h3>
         </div>
       </div>
       <div className="row">
@@ -58,4 +64,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
