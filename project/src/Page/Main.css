@@ -1,10 +1,11 @@
 .main{
     width: 100%;
     height: 1400px;
-    background: linear-gradient(-45deg, #000000, #0e111b, #132a36, #122b25);
-    animation: gradient 15s ease infinite;
+    background-color: #13161B;
+    position: relative;
 }
 .main .MenuMain{
+    position: fixed;
     width: 17%;
     height: 100%;
     box-sizing: border-box;
@@ -14,23 +15,78 @@
     margin: 0;
     width: 100%;
     height: 12%;
-    background-color:#132a36;
+    border-bottom: 1px solid rgb(36, 53, 66);
+    background-color: #13161B;
 }
 .MenuHome{
     cursor: pointer;
-    display: block;
+    /* display: block; */
     border-radius: 10px;
     margin-top: 8%;
     margin-left: 6.8%;
     width: 85%;
-    height: 3%;
-    background-color:#122b25;
+    color: #A9A9A9;
+    height: 4.6%;
 }
 .MenuHome:hover{
-    background-color: #386359;
-    transition:0.3s;
+    background-color: #1C1F25;
+    transition:0.8s;
+    color: #0085C7;
 }
-.MenuHome h3{
-    text-align: center;
-    padding-top: 2.5%;
+.icon {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.nav-link{
+    float: right;
+    width: 80%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav-link h3{
+    font-weight: 600;
+    color: #A9A9A9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 1;
+    white-space: nowrap;
+    margin-left: 12px;
+    font-size: 15px;
+    line-height: 12px;
+}
+
+.main .HomePoster{
+    right: 0;
+    border-radius: 10px;
+    overflow: hidden auto;
+    position: fixed;
+    flex: auto;
+    margin-top: 2%;
+    margin-right: 4%;
+    display: block;
+    width: 75%;
+    box-sizing: border-box;
+    height: 22%;
+    border: 1px solid rgb(36, 53, 66);
+    /* background-color: #0085C7; */
+}
+
+.main .HomeMainSecond{
+    right: 0;
+    border-radius: 10px;
+    overflow: hidden auto;
+    position: absolute;
+    flex: auto;
+    margin-top: 14%;
+    margin-right: 4%;
+    display: block;
+    width: 75%;
+    box-sizing: border-box;
+    height: 12%;
+    border: 1px solid rgb(36, 53, 66);
+    /* background-color: #0085C7; */
 }
