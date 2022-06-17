@@ -33,17 +33,17 @@ class Signup extends Form {
 
     render() {
         return (
-            <form
+            <form style={{marginLeft:'42%', marginTop:'10rem'}}
                 onSubmit={this.handleSubmit}
-                className="full_screen flex column"
+                className="full_screen"
             >
-                <Paper elevation={3} className="form">
-                    <div className="form_hading">Signup</div>
+                <div elevation={3} className="form">
+                    <div className="form_hading" style={{paddingBottom:'2rem'}}>Signup</div>
                     {this.renderInput("name", "Name")}
                     {this.renderInput("email", "Email", "email")}
                     {this.renderInput("password", "Password", "password")}
                     {this.renderSubmitBtn("Signup")}
-                </Paper>
+                </div>
                 <div style={{ margin: "10px 0" }}>
                     Already have an account? <Link to="/login">Login</Link>
                 </div>

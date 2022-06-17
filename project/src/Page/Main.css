@@ -62,7 +62,7 @@
   color: #0085c7;
 }
 .Login {
-  margin-top: 6%;
+  margin-top: 9%;
   margin-left: 6.8%;
   width: 85%;
   color: #a9a9a9;
@@ -73,6 +73,13 @@
 .icon {
   float: left;
   width: 20%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.iconPet {
+  float: left;
+  width: 6%;
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -92,10 +99,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
   opacity: 1;
+  padding-top: 5%;
   white-space: nowrap;
   margin-left: 12px;
   font-size: 15px;
-  line-height: 12px;
+  /* line-height: 10px; */
 }
 
 .main .HomePoster {
@@ -218,7 +226,7 @@
 .User{
   /* width: 100%; */
   /* color: #a9a9a9; */
-  height: 100%;
+  width: 100%;
   overflow: hidden;
   height: 100%;
   /* width: 100%; */
@@ -229,7 +237,7 @@
   cursor: pointer;
   margin-top: -6.5%;
   width: 100%;
-  height: 50%;
+  height: 80%;
   /* background-color: #046cfc; */
 }
 .NameUser:hover {
@@ -239,7 +247,7 @@
 }
 .NameUser h3{
   padding-left: 4%;
-  padding-top: 5%;
+  padding-top: 11%;
   font-weight: 600;
   height: 100%;
   color: #a9a9a9;
@@ -250,20 +258,48 @@
   font-size: 15px;
   line-height: 12px;
 }
+.NameUser .icon{
+  margin-top: 5%;
+}
 .Logout{
   position: absolute;
   margin-left: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   bottom:0;
-    /* right:0; */
-
+  cursor: pointer;
+  border-radius: 10px;
+  width: 85%;
+  color: #a9a9a9;
+  height: 5%;
+  /* overflow: hidden; */
+}
+.Logout:hover{
+  background-color: #1c1f25;
+  transition: 0.8s;
+  color: #fc0707;
+}
+.LinkLog h3{
+  padding-bottom: 5%;
+  font-weight: 600;
+  color: #a9a9a9;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  text-overflow: ellipsis;
+  opacity: 1;
+  margin-top: 2.5%;
+  margin-right: 60%;
+  white-space: nowrap;
+  /* margin-left: 12px; */
+  font-size: 15px;
+  /* line-height: 20% */
 }
 .btn-card:hover {
   transition: all 0.4s ease-out;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   top: -4px;
   border: 1px solid rgb(51, 74, 92);
-  background: linear-gradient(-45deg, #091018, #15291b, #253b55, #2a572e);
+  background: linear-gradient(-45deg, #031222, #1a2238, #203753, #0e203a);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
   height: 100%;
@@ -273,7 +309,7 @@
 }
 .HomePoster .ClickButton {
   width: 18%;
-  height: 12%;
+  height: 22%;
   border-radius: 5px;
   margin-left: 1%;
   padding: 10px 12px;
@@ -293,7 +329,13 @@
   text-decoration: none;
   color: white;
 }
-
+.HomePoster .texth2{
+  margin-top: 1%;
+  font-size: 20px;
+}
+.HomePoster .texth4{
+  margin-top: 1%;
+}
 .Detail-HomeMainSecond {
   position: absolute;
   bottom: 0;
@@ -358,4 +400,68 @@
 .ether{
   padding-top: 10%;
   font-size: 15px;
+}
+.main .DetailPet{
+  /* position: absolute; */
+  left: 0;
+  width: 50%;
+  height: 100%;
+  /* background-color: #0085c7; */
+}
+.main .FormPay{
+  right: 0;
+  width: 50%;
+  height: 100%;
+  /* background-color: #fc0707; */
+}
+.credit-card{
+  margin-top: 4%;
+  margin-left: 5%;
+  width: 90%;
+  border: 1px solid rgb(36, 53, 66);
+}
+.TitlePet{
+  left: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  flex: auto;
+  margin-top: 2%;
+  margin-left: 1%;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  height: 12%;
+  border: 1px solid rgb(36, 53, 66);
+}
+.ImgPet{
+  left: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  flex: auto;
+  margin-top: 12%;
+  margin-left: 1%;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  height:50%;
+  /* border: 1px solid rgb(36, 53, 66); */
+}
+.NameVicon{
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 100%;
+  height: 30%;
+  /* background-color: #0085c7; */
+}
+.PriceVicon{
+  margin-top: 1%;
+  width: 100%;
+  height: 30%;
+  background-color: #0085c7;
+}
+.iconPet{
+  width: 6%;
+  height: 100%;
 }

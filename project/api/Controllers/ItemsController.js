@@ -40,21 +40,13 @@ exports.CreateItem = async (req, res) => {
   }
 };
 
-exports.GetItemById = (req, res) => {
-  Items.findById(req.params.itemId, function (err, response) {
-    if (err) {
-      res.status(201).json({
-        code: 201,
-        message: "Error From GetItemById",
-      });
-    } else {
-      res.status(200).json({
-        code: 200,
-        message: "GetItemById Successfully!",
-        data: response,
-      });
-    }
-  });
+exports.GetItemById = async(req, res) => {
+  try {
+    const Item = await Items.findById(req.params.itemId);
+    res.json(Item);
+} catch (err) {
+    res.json({ message: err });
+}
 };
 
 exports.DeleteItem = (req, res) => {

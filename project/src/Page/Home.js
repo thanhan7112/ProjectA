@@ -1,8 +1,11 @@
 import "./Main.css";
 import { FaEthereum } from "react-icons/fa";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import img from '../Image/origin-banner.png'
 import Menu from "./Menu";
+import { BiArrowFromLeft } from "react-icons/bi";
+
 import { Component } from "react";
 import axios from "axios";
 class Home extends Component {
@@ -42,8 +45,8 @@ class Home extends Component {
           Mavis Hub!
         </h4>
         <div className="ClickButton">
-          <a target="_blank" href="https://welcome.skymavis.com/download/">
-            Download on Mavis Hub
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100048142928129">
+            Nguyen Thanh An Vip Pro Max
           </a>
         </div>
         <img className="image" src={img} alt="Snow" style={{width:'100%', height:'100%'}}></img>
@@ -70,8 +73,11 @@ class Home extends Component {
             <center>
 
               <Card.Img className="CardImg" variant="top" src={Item.itemSaleImg} />
+              <Card.Footer style={{ color: "white", fontSize: "14px" }}>
+                {Item.ItemName}
+              </Card.Footer>
               <Card.Title className="text">
-                {Item.ItemPrice}
+                {Item.ItemPrice > 50? <span style={{color:'yellow'}}>{Item.ItemPrice}</span> : <span style={{color:'white'}}>{Item.ItemPrice}</span>}
                 <FaEthereum className="ether"></FaEthereum>
               </Card.Title>
               <br></br>
@@ -84,7 +90,7 @@ class Home extends Component {
               </Card.Footer>
               <br></br>
             </center>
-            {/* <Button variant="white" onClick={()=> this.deleteRow(Item._id)} >Xac Nhan</Button>  */}
+            <Link  to={"/PayWithMetaMask/" + Item._id}><BiArrowFromLeft style={{ color: "white", fontSize: "30px" }}/></Link>
           </Card.Body>
         </Card>
   ))}

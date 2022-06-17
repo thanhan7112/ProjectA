@@ -1,6 +1,6 @@
 import "./Main.css";
 import { BiHomeAlt, BiBookAlt } from "react-icons/bi";
-import { AiOutlineLogin, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineLogin, AiOutlineUser, AiOutlineLogout } from "react-icons/ai";
 import React, { useEffect, useState } from "react";
 import { getCurrentUser } from "../services/authService";
 import { AppBar, Toolbar, Button } from "@material-ui/core";
@@ -24,7 +24,7 @@ function Menu() {
               style={{
                 paddingTop: "20%",
                 paddingLeft: "20%",
-                fontSize: "20px",
+                fontSize: "32px",
               }}
             />
           </div>
@@ -40,7 +40,7 @@ function Menu() {
               style={{
                 paddingTop: "20%",
                 paddingLeft: "20%",
-                fontSize: "20px",
+                fontSize: "32px",
               }}
             />
           </div>
@@ -84,20 +84,34 @@ function Menu() {
           {user && (
             <div className="User">
               <div className="NameUser">
-              <div className="icon">
-            <AiOutlineUser
-              style={{
-                paddingTop: "15%",
-                paddingLeft: "20%",
-                fontSize: "20px",
-              }}
-            />
-          </div><h3>{user.name}</h3>
+                <div className="icon">
+                  <AiOutlineUser
+                    style={{
+                      paddingTop: "20%",
+                      paddingLeft: "20%",
+                      fontSize: "32px",
+                    }}
+                  />
+                </div>
+                <h3>{user.name}</h3>
               </div>
               <div className="Logout">
-                <Link to="/logout">
-                  <Button color="secondary">Logout</Button>
-                </Link>
+                <div className="icon">
+                  <AiOutlineLogout
+                    style={{
+                      paddingTop: "25%",
+                      paddingLeft: "20%",
+                      fontSize: "32px"
+                    }}
+                  />
+                </div>
+                <div className="LinkLog">
+                  <Link to="/logout">
+                    <Button style={{width:'80%'}}>
+                      <h3>Logout</h3>
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           )}

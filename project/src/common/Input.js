@@ -3,7 +3,7 @@ import { TextField } from "@material-ui/core";
 
 const Input = ({ error, ...rest }) => {
     return (
-        <React.Fragment>
+        <div style={{paddingBottom:'2rem'}}>
             {error ? (
                 <TextField
                     {...rest}
@@ -21,7 +21,7 @@ const Input = ({ error, ...rest }) => {
                     className="input"
                 />
             )}
-        </React.Fragment>
+        </div>
     );
 };
 

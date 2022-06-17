@@ -7,6 +7,8 @@ import Home from './Page/Home';
 import Login from './Page/Login';
 import Signup from './Page/Signup';
 import Logout from './Page/Logout';
+import Metamask from './Page/Metamask/Metamask';
+// import Metamask from './Page/Metamask/metamask';
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +18,9 @@ function App() {
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/signup' element={<Signup/>}></Route>
       <Route path='/logout' element={<Logout/>}></Route>
+      {/* <Route path='/Wallet' element={<Wallet />} /> */}
       <Route path='*' element={<PageNotFound />}/>
+      <Route path='/PayWithMetaMask/:itemId' element={<Metamask />} />
     </Routes>
     </BrowserRouter>
   );

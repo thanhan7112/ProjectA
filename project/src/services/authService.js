@@ -3,7 +3,7 @@ import jwtDecode from "jwt-decode";
 // const apiUrl = process.env.REACT_APP_API_URL;
 
 export function login(data) {
-    return axios.post('http://localhost:8080/api/auth', data);
+    return axios.post('http://localhost:8090/api/auth', data);
 }
 
 export function getCurrentUser() {
