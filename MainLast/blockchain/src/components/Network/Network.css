@@ -1,0 +1,148 @@
+#network__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(4, 4, 4, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+
+    /* Add animation */
+    animation: show__overlay 0.5s linear;
+}
+
+.network {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 487px;
+    height: 446px;
+    background: #0e0e0e;
+    border: 2px solid #1c1c1c;
+    border-radius: 24px;
+    z-index: 99999;
+}
+
+.network__head {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px;
+}
+
+.network__head-title {
+    font-family: 'Brinnan';
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #ffffff;
+}
+
+.close__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(140, 137, 137);
+    border-radius: 500px;
+    cursor: pointer;
+    color: rgb(140, 137, 137);
+    text-decoration: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.close__btn:hover {
+    border: 2px solid rgb(228, 216, 216);
+    color: rgb(228, 216, 216);
+}
+
+.network__list {
+    width: 418px;
+    height: 322px;
+    background: #171717;
+    border: 1px solid #303030;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.network__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 2rem;
+}
+
+.network__list-item_content {
+    display: flex;
+    align-items: center;
+}
+
+.network__list-item_content p {
+    font-family: 'Brinnan';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+.network__list-item_content img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn__current {
+    width: 99px;
+    height: 41px;
+    background: #000000;
+    border-radius: 12px;
+    font-family: 'Brinnan';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #ffffff;
+    cursor: pointer;
+    border: 2px solid #33ace0;
+}
+
+@keyframes show__overlay {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #network__modal {
+        width: 100%;
+    }
+
+    .network {
+        width: 80%;
+    }
+    .network__list-item {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .network__list {
+        width: 100%;
+    }
+}

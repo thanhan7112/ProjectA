@@ -1,0 +1,134 @@
+.assets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-top: 40px;
+}
+
+.assets__name {
+    width: 135px;
+}
+
+.assets__name-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.assets__name-icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+}
+
+.assets__name-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.assets__name-text_title {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.assets__name-text_sub {
+    font-family: 'Brinnan';
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #77838f;
+}
+
+.assets__balance,
+.assets__interest {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 145px;
+    /* margin-left: 5rem; */
+}
+
+.assets__balance-price,
+.assets__interest-price,
+.assets__allocation {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ffffff;
+}
+
+.assets__balance-sub {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #77838f;
+}
+
+.assets__interest-sub {
+    font-family: 'Brinnan';
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #169b00;
+}
+
+.assets__interest-sub span {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #77838f;
+    margin-left: 7px;
+}
+
+@media screen and (max-width: 650px) {
+    .assets {
+        width: 327px;
+        height: auto;
+        background: #0e0e0e;
+        border: 2px solid #1c1c1c;
+        border-radius: 18px;
+        padding: 10px 20px;
+    }
+
+    .assets:hover {
+        border: 2px solid rgb(35, 121, 191);
+    }
+
+    .assets:first-child {
+        margin: 0;
+    }
+
+    .assets__balance,
+    .assets__interest {
+        width: 0;
+        margin-left: 1em;
+    }
+
+    .assets__content-mb {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .assets__interest {
+        flex: 1;
+    }
+}

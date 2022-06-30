@@ -1,0 +1,139 @@
+.sidebar {
+    max-width: 283px;
+    /* min-height: 100vh; */
+    background: #171717;
+    padding: 0 0.5rem;
+}
+
+.sidebar__head {
+    padding-top: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__head-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__head-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sidebar__head-text_title {
+    font-family: 'Brinnan';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+}
+
+.sidebar__head-text_desc {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #77838f;
+}
+
+.sidebar__list {
+    margin-top: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar__list-item {
+    margin-bottom: 0.5rem;
+    width: 185px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #0e0e0e 0%, #161616 100%);
+    cursor: pointer;
+}
+
+.sidebar__list-item:hover {
+    border: 2px solid rgb(117, 55, 198);
+}
+
+.sidebar__list-item img {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.sidebar__list-item p {
+    font-family: 'Brinnan';
+    margin-right: 58px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 650px) {
+    .sidebar {
+        width: 100%;
+        max-width: unset;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #0e0e0e;
+        border: 2px solid #1c1c1c;
+        border-radius: 18px;
+        opacity: 0.8;
+        z-index: 999;
+    }
+
+    .sidebar__head-text,
+    .sidebar__head {
+        display: none;
+        padding: 0;
+    }
+    .sidebar__list-item {
+        width: 100%;
+        border-radius: 50%;
+        width: 55px;
+    }
+
+    .sidebar__list-item:hover {
+        background: linear-gradient(
+            180deg,
+            #292a2d 0%,
+            rgba(28, 28, 28, 0) 100%
+        );
+    }
+
+    .sidebar__list-item p {
+        display: none;
+    }
+
+    .sidebar__list {
+        width: 100%;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .sidebar {
+        padding: 0;
+    }
+}

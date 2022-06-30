@@ -1,0 +1,8 @@
+.App {
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
+.home {
+    display: flex;
+}

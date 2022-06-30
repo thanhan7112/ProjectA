@@ -1,0 +1,362 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+}
+
+.header-title {
+    display: flex;
+    padding: 10px;
+}
+.content-grid {
+    display: flex;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+}
+
+.header-title h2 {
+    color: #fff;
+}
+
+.header-title span {
+    color: gray;
+    margin-top: 7px;
+    padding-left: 10px;
+}
+
+.header-button {
+    margin-left: 70%;
+    height: 50px;
+    width: 180px;
+    border: 1px solid rgb(58, 54, 54);
+    border-radius: 11px;
+    display: flex;
+}
+.btn-header {
+    color: gray;
+    font-family: "Brinnan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: black;
+    height: 60%;
+    margin-left: 13px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.btn-header:hover {
+    color: #fff;
+    border: 1px solid rgb(69, 69, 74);
+    background: rgb(69, 69, 74);
+}
+
+.content-grid {
+    height: 241px;
+}
+
+.item-title {
+    display: flex;
+}
+
+.title-left {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: -55%;
+}
+
+.title-left span {
+    display: inline-block;
+    text-align: center;
+}
+.title-right span {
+    display: inline-block;
+    text-align: center;
+}
+
+.title-right {
+    position: relative;
+    top: -55%;
+
+    width: 50%;
+    text-align: center;
+}
+
+.usdc-item img {
+  left: 9rem;
+    position: relative;
+    top: -50px;
+}
+
+.hactitle {
+    display: flex;
+    height: 100px;
+}
+
+.usdc-item {
+    width: 400px;
+    height: 180px;
+    background-color: gray;
+    background: #0e0e0e;
+    border: 2px solid #1c1c1c;
+    border-radius: 50px;
+}
+.title-right-p {
+    padding-left: 3rem;
+    color: #fff;
+    margin-right: 35%;
+    font-weight: 1000;
+}
+.title-left-p {
+    padding-left: 4.5rem;
+    font-weight: 1000;
+    color: #fff;
+
+    margin-left: 35%;
+}
+.box-usdc {
+    padding-bottom: 5rem;
+    margin: 10px 30px;
+}
+.color-text p,
+h3,
+span {
+    color: #fff;
+}
+.icon-dynamic {
+    width: 30px;
+    height: 30px;
+    margin: -30px;
+    z-index: 1;
+    top: 10%;
+}
+.dynamic-icon img {
+    top: -200px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+
+    border: 1px solid #1c1c1c;
+}
+.dynamic-icon{
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+}
+body {
+    /* text-align: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1,
+  h2,
+  a,
+  p {
+    font-family: helvetica, sans-serif;
+  }
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #00898e;
+    margin: 0;
+    padding: 30vh 0 1em;
+  }
+  h2 {
+    text-align: center;
+    white-space: nowrap;
+    color: #f9fafa;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  p {
+    text-align: left;
+  }
+  /* .btnn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  .btnn:hover {
+    background: #00898e;
+  } */
+  .popup {
+    position: fixed;
+    width: 400px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    background: #0e0e0e;
+    visibility: hidden;
+    opacity: 0;
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+    z-index: 1;
+  }
+  .TitleFunHead {
+    display: flex;
+    border-bottom: 1px solid #303030;
+    border-radius: 12px 12px 0 0;
+    width: 400px;
+    height: 70px;
+  }
+  .TitleFunHead h2 {
+    font-family: "Brinnan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 20px;
+    line-height: 4rem;
+    color: #ffffff;
+  }
+  .popup .boxinBox {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 380px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #171717;
+  }
+  
+  .listBox {
+    display: flex;
+    width: 378px;
+    height: 74px;
+    border-bottom: 1px solid #303030;
+  }
+  .TextListBox {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 250px;
+    /* background-color: #00898e; */
+  }
+  .TextListBox h2 {
+    padding-left: 0.8rem;
+    font-family: "Brinnan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding-right: 2rem;
+  }
+  .TextListBox h5 {
+    font-family: "Brinnan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  
+    color: #77838f;
+  }
+  .ButtonlistBox {
+    display: flex;
+    height: 100%;
+    width: 128px;
+  }
+  .ButtonlistBox .buttons {
+    margin-top: 16px;
+    margin-left: 15px;
+    width: 99px;
+    height: 41px;
+    align-items: center;
+    border: 1px solid #353b74;
+    border-radius: 12px;
+    background: #000000;
+    font-family: "Brinnan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+  
+    color: #ffffff;
+  }
+  .ButtonlistBox .buttons:hover {
+    border: 1px solid #a445b4;
+  }
+  .listBoxBottom {
+    width: 378px;
+    height: 74px;
+  }
+  .popup:target {
+    visibility: visible;
+    opacity: 1;
+    /* cancel visibility transition delay */
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .popup-close {
+    position: absolute;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .popup .close {
+    position: relative;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    color: rgb(173, 150, 150);
+    transition: color 0.3s;
+    font-size: 2em;
+    line-height: 0.6em;
+    font-weight: bold;
+  }
+  .popup .close:hover {
+    color: #00e5ee;
+  }
+  .close-popup {
+    background: rgba(0, 0, 0, 0.7);
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+  }
+  .popup:target + .close-popup {
+    opacity: 1;
+    visibility: visible;
+    /* cancel visibility transition delay */
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .content-grid{
+        width: 100%;
+
+    }
+  }

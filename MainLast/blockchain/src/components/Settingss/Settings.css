@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url(//db.onlinewebfonts.com/c/9fbffe9c24e09e4fac70f87f5a76f558?family=Brinnan);
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+
+.home-settings {
+    height: 1117px;
+}
+
+.settings-avata {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 430px;
+    top: 165px;
+}
+
+.settings-text {
+    position: absolute;
+    font-family: 'Brinnan';
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.id-name {
+    width: 162px;
+    height: 23px;
+    left: 535px;
+    top: 178px;
+}
+
+.text-name {
+    width: 197px;
+    height: 25px;
+    left: 535px;
+    top: 207px;
+    color: #77838F;
+}
+
+.settings-edit-photto {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 198px;
+    height: 50px;
+    left: 1100px;
+    top: 176px;
+    cursor: pointer;
+
+    border: 2px solid #1A1A1A;
+    border-radius: 12px;
+}
+
+.text-edit {
+    width: 153px;
+    height: 17px;
+    left: 1125px;
+    top: 194px;
+    cursor: pointer;
+}
+
+.settings-personal-info {
+    position: absolute;
+    width: 874px;
+    height: 367px;
+    left: 426px;
+    top: 304px;
+
+    background: #0E0E0E;
+    border: 2px solid #1C1C1C;
+    border-radius: 24px;
+
+}
+
+.text-account {
+    width: 89px;
+    height: 17px;
+    left: 32px;
+    top: 25px;
+}
+
+.text-username {
+    left: 32px;
+    top: 100px;
+    width: 101px;
+}
+
+.text-fullname {
+    width: 91px;
+    left: 32px;
+    top: 175px;
+}
+
+.text-email {
+    width: 134px;
+    left: 32px;
+    top: 253px;
+}
+
+.text-wallet {
+    width: 141px;
+    left: 32px;
+    top: 325px;
+}
+
+.settings-line {
+    position: absolute;
+    width: 872px;
+    height: 0px;
+
+
+    border: 1px solid #1C1C1C;
+}
+
+.line-settings-1 {
+    top: 68.75px;
+}
+
+.line-settings-2 {
+    top: 149px;
+}
+
+.line-settings-3 {
+    top: 224px;
+}
+
+.line-settings-4 {
+    top: 299px;
+}
+
+.text-username-chill {
+    width: 243px;
+    right: 99px;
+    top: 96px;
+    text-align: end;
+}
+
+.text-fullname-chill {
+    width: 221px;
+    right: 99px;
+    text-align: end;
+    top: 171px;
+}
+
+.text-email-chill {
+    width: 221px;
+    right: 99px;
+    top: 248px;
+    text-align: end;
+}
+
+.text-wallet-chill {
+    width: 119px;
+    right: 180px;
+    top: 321px;
+    text-align: end;
+}
+
+.img-edit {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 778px;
+}
+
+.edit-1 {
+    top: 98px;
+    cursor: pointer;
+}
+
+.edit-2 {
+    cursor: pointer;
+    top: 173px;
+}
+
+.edit-3 {
+    cursor: pointer;
+    top: 250px;
+}
+
+.settings-change {
+    position: absolute;
+    width: 95px;
+    height: 30px;
+    
+
+    background: linear-gradient(180deg, #292A2D 0%, #1C1C1C 100%);
+    border-radius: 8px;
+}
+
+.text-change {
+    padding: 5px 15px;
+    left: 700px;
+    top: 316px;
+    cursor: pointer;
+}
+
+.settings-referrals {
+    position: absolute;
+    width: 874px;
+    height: 296px;
+    left: 426px;
+    top: 707px;
+
+    background: #0E0E0E;
+    border: 2px solid #1C1C1C;
+    border-radius: 24px;
+}
+
+.text-preferences {
+    top: 25px;
+    left: 32px;
+}
+
+.line-settings-5 {
+    top: 68.75px;
+}
+
+.text-network {
+    left: 32px;
+    top: 100px;
+}
+
+.line-settings-6 {
+    top: 149px;
+}
+
+.line-settings-7 {
+    top: 224px;
+}
+
+.text-connected {
+    left: 32px;
+    top: 175px;
+}
+
+.text-transactions {
+    left: 32px;
+    top: 250px;
+}
+
+.text-ethereum {
+    top: 98px;
+    left: 619px;
+}
+
+.text-connect {
+    top: 175px;
+    left: 519px;
+}
+
+.icon-setting {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+
+}
+
+.ether {
+    left: 713px;
+    top: 94px;
+    z-index: 3;
+}
+.avaxi{
+    left: 728px;
+    top: 94px;
+    z-index: 2;
+}
+.bnv{
+    left: 740px;
+    top: 94px;
+    z-index: 1;
+}
+.matici{
+    left: 752px;
+    top: 94px;
+}
+.text-text-connect{
+    padding: 5px 15px;
+    top: 169px;
+    left: 695px;
+    cursor: pointer;
+}
+.text-download{
+    padding: 5px 10px;
+    top: 242px;
+    left: 695px;
+    cursor: pointer;
+}

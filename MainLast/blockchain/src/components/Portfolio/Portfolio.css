@@ -1,0 +1,186 @@
+.portfolio {
+    width: 1002px;
+    height: 445px;
+    background: #0e0e0e;
+    border: 2px solid #1c1c1c;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+}
+
+.portfolio__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+    z-index: 10;
+}
+
+.portfolio__head-title {
+    font-family: 'Brinnan';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.428571px;
+    color: #77838f;
+    margin-left: 40px;
+}
+
+.portfolio__head-timelist {
+    display: flex;
+    align-items: center;
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.428571px;
+    list-style: none;
+    color: #77838f;
+}
+
+.portfolio__head-timeitem {
+    margin: 0 26px;
+}
+
+.portfolio__head-timeitem:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.portfolio__price {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+
+.portfolio__price p:first-child {
+    font-family: 'Brinnan';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.428571px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.portfolio__price p:last-child {
+    font-family: 'Brinnan';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.428571px;
+    color: #009e23;
+}
+
+.portfolio__price p span {
+    font-family: 'Brinnan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.428571px;
+
+    color: #77838f;
+    margin-left: 3px;
+}
+
+.graph {
+    position: relative;
+    width: 100%;
+    height: 187.2px;
+    margin-top: 13px;
+}
+
+.graph__gridbase {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(
+        48.48% 23.87% at 39.69% 80.76%,
+        rgba(27, 25, 61, 0.902542) 0%,
+        rgba(35, 33, 76, 0.0001) 100%
+    );
+    z-index: 1;
+}
+
+.graph__path-0 {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.graph__path-1 {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.graph__path-2 {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+}
+
+.graph__path-3 {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+
+.portfolio__bottom-listtime {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 16.7px 26px 16.7px;
+}
+
+.portfolio__bottom-listtime_item {
+    font-family: 'HelveticaNeue';
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.428571px;
+
+    color: #59588d;
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__bottom {
+        display: none;
+    }
+
+    .portfolio {
+        width: 328px;
+        height: 172px;
+    }
+
+    .portfolio__head {
+        margin-left: 20px;
+        flex-wrap: wrap;
+    }
+    .portfolio__head-title {
+        margin-bottom: 1rem;
+    }
+
+    .portfolio__head-timelist {
+        font-size: 8px;
+    }
+
+    .graph {
+        width: 100%;
+        height: 60px;
+        margin-top: 13px;
+        margin-bottom: 2rem;
+    }
+
+    .graph__path img,
+    .graph__gridbase img {
+        width: 100%;
+    }
+}

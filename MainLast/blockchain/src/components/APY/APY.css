@@ -1,0 +1,34 @@
+.APY {
+    display: flex;
+    align-items: center;
+}
+
+.APY__index {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.428571px;
+    color: #ffffff;
+}
+
+.APY img {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+}
+
+.APY__text {
+    font-family: 'Brinnan';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.428571px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1300px) {
+    .APY {
+        padding: 1rem 1rem;
+    }
+}
